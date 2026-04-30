@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMM Boost Studio | Marketing Digital</title>
+  <meta name="description" content="Sitio web funcional para agencia de marketing SMM, paquetes, servicios y formulario de cotización por WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#inicio"><span>S</span>SMM Boost Studio</a>
+      <button id="menuBtn" class="menu" aria-label="Abrir menú">☰</button>
+      <div id="navLinks" class="links">
+        <a href="#servicios">Servicios</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#faq">FAQ</a>
+        <button id="themeBtn" class="theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="heroText">
+        <p class="tag">Agencia SMM / Social Media Marketing</p>
+        <h1>Haz que tu marca se vea profesional, crezca en redes y venda más.</h1>
+        <p class="lead">Creamos estrategia, contenido, campañas, optimización y reportes para TikTok, Instagram, Facebook, YouTube y negocios online.</p>
+        <div class="actions">
+          <a class="btn primary" href="#pedido">Solicitar cotización</a>
+          <a class="btn secondary" href="#paquetes">Ver paquetes</a>
+        </div>
+        <div class="stats">
+          <div><b>+120</b><span>campañas</span></div>
+          <div><b>24/7</b><span>atención</span></div>
+          <div><b>100%</b><span>en ventas</span></div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="topDots"><i></i><i></i><i></i></div>
+        <div class="metric"><p>Alcance mensual</p><h2>+38.4%</h2><div class="bar"><span></span></div></div>
+        <div class="gridMetrics">
+          <div><small>Leads</small><strong>842</strong></div>
+          <div><small>CTR</small><strong>6.7%</strong></div>
+          <div><small>Ventas</small><strong>214</strong></div>
+          <div><small>ROI</small><strong>3.4x</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="heading"><p class="tag">Qué hacemos</p><h2>Servicios de marketing para redes sociales</h2><p>Una web lista para vender servicios SMM de forma clara y profesional.</p></div>
+      <div class="cards">
+        <article><span>🎯</span><h3>Estrategia SMM</h3><p>Plan de crecimiento, análisis de audiencia, nicho, oferta y calendario.</p></article>
+        <article><span>🎬</span><h3>Contenido UGC</h3><p>Ideas, guiones, hooks, copies y estructura visual para vender mejor.</p></article>
+        <article><span>📈</span><h3>Campañas Ads</h3><p>Configuración, optimización y seguimiento de anuncios para captar clientes.</p></article>
+        <article><span>🛒</span><h3>Tiendas y afiliados</h3><p>Optimización de perfiles, enlaces, catálogos, landing pages y embudos.</p></article>
+        <article><span>💬</span><h3>Community Management</h3><p>Gestión de mensajes, comentarios, reputación y respuestas rápidas.</p></article>
+        <article><span>📊</span><h3>Reportes</h3><p>Medición de alcance, interacción, leads, conversiones y mejoras.</p></article>
+      </div>
+    </section>
+
+    <section id="paquetes" class="section packages">
+      <div class="heading"><p class="tag">Planes</p><h2>Paquetes listos para vender</h2><p>Edita precios y beneficios en <b>script.js</b>.</p></div>
+      <div id="pricingGrid" class="pricing"></div>
+    </section>
+
+    <section id="pedido" class="section order">
+      <div class="heading"><p class="tag">Formulario</p><h2>Solicita tu cotización</h2><p>Genera un resumen listo para enviar por WhatsApp.</p></div>
+      <div class="orderBox">
+        <form id="orderForm" class="form">
+          <div class="row"><label>Nombre / Marca<input id="clientName" required placeholder="Ej: Cuba Followers" /></label><label>WhatsApp o correo<input id="clientContact" required placeholder="Ej: +1 000 000 0000" /></label></div>
+          <div class="row"><label>Red principal<select id="platform" required><option value="">Seleccionar</option><option>TikTok</option><option>Instagram</option><option>Facebook</option><option>YouTube</option><option>Telegram</option><option>Web / Landing</option></select></label><label>Paquete<select id="packageSelect" required></select></label></div>
+          <label>Objetivo<textarea id="goal" rows="5" required placeholder="Ej: quiero vender más, conseguir leads o mejorar mi contenido..."></textarea></label>
+          <label>Presupuesto extra para anuncios<input id="adBudget" type="number" min="0" value="0" /></label>
+          <button class="btn primary full" type="submit">Generar pedido</button>
+        </form>
+        <aside class="summary">
+          <h3>Resumen</h3>
+          <div id="summaryBox"><p>Completa el formulario para ver el resumen del pedido.</p></div>
+          <div class="actions"><a id="whatsappBtn" class="btn whatsapp disabled" target="_blank">Enviar por WhatsApp</a><button id="copyBtn" class="btn secondary" disabled>Copiar</button></div>
+          <small>Cambia tu número de WhatsApp en <b>script.js</b>.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="heading"><p class="tag">FAQ</p><h2>Preguntas frecuentes</h2></div>
+      <details><summary>¿Este sitio ya funciona?</summary><p>Sí. El formulario genera resumen y enlace de WhatsApp.</p></details>
+      <details><summary>¿Necesito backend?</summary><p>Para esta versión no. Para guardar pedidos, pagos o panel admin sí habría que añadir backend.</p></details>
+      <details><summary>¿Puedo cambiar precios?</summary><p>Sí. Cambia el arreglo <b>packages</b> dentro de <b>script.js</b>.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© <span id="year"></span> SMM Boost Studio. Marketing digital para marcas modernas.</p></footer>
+  <div id="toast" class="toast">Copiado ✅</div>
+  <script src="script.js"></script>
+</body>
+</html>
